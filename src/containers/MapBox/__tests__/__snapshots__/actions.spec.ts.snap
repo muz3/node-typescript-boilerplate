@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapBox Actions should dispatch fetchOriginGeocodingAction 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "address": "Home",
+      "coordinates": Array [
+        -137,
+        37,
+      ],
+    },
+    "type": "@@MapBox/FETCH_ORIGIN_GEOCODING_SUCCESS",
+  },
+]
+`;
+
+exports[`MapBox Actions should dispatch setDeliverGeoFeatures 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": Array [
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+            Array [
+              -118.47115,
+              34.00309,
+            ],
+            Array [
+              -118.47325,
+              34.00463,
+            ],
+            Array [
+              -118.47629,
+              34.00289,
+            ],
+            Array [
+              -118.48058,
+              33.99993,
+            ],
+            Array [
+              -118.48113,
+              33.99954,
+            ],
+            Array [
+              -118.48088,
+              33.9993,
+            ],
+            Array [
+              -118.48088,
+              33.99928,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+    ],
+    "type": "@@MapBox/SET_DELIVER_GEO_FEATURES",
+  },
+]
+`;
+
+exports[`MapBox Actions should dispatch setDeliverSimulationStarted 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "@@MapBox/SET_DELIVER_SIMULATION_STARTED",
+  },
+]
+`;
+
+exports[`MapBox Actions should dispatch setViewport 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "latitude": 37,
+      "longitude": -137,
+      "zoom": 11,
+    },
+    "type": "@@MapBox/SET_VIEWPORT",
+  },
+]
+`;

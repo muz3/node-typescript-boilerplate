@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component AppFooter should render AppFooter correctly 1`] = `
+<Styled(Styled(styled.div))
+  alignItems="center"
+  justifyContent="center"
+  padding={3}
+>
+  Made with 
+  <ReactComponentIcon
+    color="rgb(255, 85, 85)"
+    focusable={false}
+    fontSize={5}
+    variant="primary"
+    viewBox="0 0 24 24"
+  />
+   by 
+  <styled.a
+    color="white"
+    href="https://github.com/inkless"
+    target="_blank"
+  >
+    @Guangda Zhang
+  </styled.a>
+   | 
+  <Styled(AboutLink) />
+</Styled(Styled(styled.div))>
+`;

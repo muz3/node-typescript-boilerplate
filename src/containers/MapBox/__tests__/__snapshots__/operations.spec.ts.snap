@@ -1,0 +1,2544 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapBox Actions should clearInterval when no delivering and pending 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "@@MapBox/SET_DELIVER_SIMULATION_STARTED",
+  },
+]
+`;
+
+exports[`MapBox Actions should dispatch correctly for fetchDestinationOperation 1`] = `
+Array [
+  Object {
+    "payload": undefined,
+    "type": "@@OrderList/FETCH_DEST_REQUEST",
+  },
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "@@MapBox/SET_DELIVER_SIMULATION_STARTED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -137,
+        32,
+      ],
+      "destination": "185 Culver Blvd, Playa Del Rey, CA 90293",
+      "distance": 1.0214551865473747,
+      "id": "9H4whD",
+      "name": "Banana Split",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+            Array [
+              -118.47115,
+              34.00309,
+            ],
+            Array [
+              -118.47325,
+              34.00463,
+            ],
+            Array [
+              -118.47629,
+              34.00289,
+            ],
+            Array [
+              -118.48058,
+              33.99993,
+            ],
+            Array [
+              -118.48113,
+              33.99954,
+            ],
+            Array [
+              -118.48088,
+              33.9993,
+            ],
+            Array [
+              -118.48088,
+              33.99928,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "route-9H4whD",
+          "route": "destination",
+        },
+        "type": "Feature",
+      },
+      "speed": 0.011666666666666667,
+      "startTime": 2019-04-20T05:09:15.265Z,
+    },
+    "type": "@@OrderList/START_DELIVERING_ORDER",
+  },
+]
+`;
+
+exports[`MapBox Actions should dispatch correctly for fetchOriginOperation 1`] = `
+Array [
+  Object {
+    "payload": undefined,
+    "type": "@@MapBox/FETCH_ORIGIN_GEOCODING_REQUEST",
+  },
+  Object {
+    "payload": Object {
+      "address": "1800 Marine Street, Santa Monica, CA 90405",
+      "coordinates": Array [
+        -137,
+        32,
+      ],
+    },
+    "type": "@@MapBox/FETCH_ORIGIN_GEOCODING_SUCCESS",
+  },
+]
+`;
+
+exports[`MapBox Actions should dispatch correctly for startSimulatingDeliver 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "@@MapBox/SET_DELIVER_SIMULATION_STARTED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Array [
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.4676337575846,
+            34.00521457791065,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-ZEUn6r",
+          "name": "Chunky Monkey",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.4676337575846,
+              34.00521457791065,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-ZEUn6r",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46784751453784,
+            34.005089155451564,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tG7Mtb",
+          "name": "Beef Stew",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46784751453784,
+              34.005089155451564,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tG7Mtb",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46806127085972,
+            34.00496373262274,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-5kyaoG",
+          "name": "Cheese",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46806127085972,
+              34.00496373262274,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-5kyaoG",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46827502655029,
+            34.004838309424194,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-2YVKCU",
+          "name": "Spinach Omelet",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46827502655029,
+              34.004838309424194,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-2YVKCU",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46848878160947,
+            34.00471288585593,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-z57hNM",
+          "name": "Beef Hash",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46848878160947,
+              34.00471288585593,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-z57hNM",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46870253603733,
+            34.00458746191794,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-7FNaQi",
+          "name": "Pork Chop",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46870253603733,
+              34.00458746191794,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-7FNaQi",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46891628983383,
+            34.00446203761024,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-EJyQaE",
+          "name": "Kale Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46891628983383,
+              34.00446203761024,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-EJyQaE",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46913004299896,
+            34.00433661293282,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-n5byZt",
+          "name": "Fresh Fruit",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46913004299896,
+              34.00433661293282,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-n5byZt",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46934379553282,
+            34.004211187885694,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-8yJnGe",
+          "name": "Cranberry Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46934379553282,
+              34.004211187885694,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-8yJnGe",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46955754743531,
+            34.00408576246885,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tr5K86",
+          "name": "Fudge Ice Cream Cake",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46955754743531,
+              34.00408576246885,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tr5K86",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+    ],
+    "type": "@@MapBox/SET_DELIVER_GEO_FEATURES",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Array [
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46977129870643,
+            34.003960336682304,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-ZEUn6r",
+          "name": "Chunky Monkey",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46977129870643,
+              34.003960336682304,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-ZEUn6r",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.46998504934629,
+            34.003834910526045,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tG7Mtb",
+          "name": "Beef Stew",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.46998504934629,
+              34.003834910526045,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tG7Mtb",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47019879935479,
+            34.003709484000105,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-5kyaoG",
+          "name": "Cheese",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47019879935479,
+              34.003709484000105,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-5kyaoG",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47041254873199,
+            34.003584057104455,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-2YVKCU",
+          "name": "Spinach Omelet",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47041254873199,
+              34.003584057104455,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-2YVKCU",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47062629747786,
+            34.00345862983911,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-z57hNM",
+          "name": "Beef Hash",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47062629747786,
+              34.00345862983911,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-z57hNM",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.4708400455924,
+            34.00333320220407,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-7FNaQi",
+          "name": "Pork Chop",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.4708400455924,
+              34.00333320220407,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-7FNaQi",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-EJyQaE",
+          "name": "Kale Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-EJyQaE",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-n5byZt",
+          "name": "Fresh Fruit",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-n5byZt",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-8yJnGe",
+          "name": "Cranberry Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-8yJnGe",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tr5K86",
+          "name": "Fudge Ice Cream Cake",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tr5K86",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+    ],
+    "type": "@@MapBox/SET_DELIVER_GEO_FEATURES",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Array [
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-ZEUn6r",
+          "name": "Chunky Monkey",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-ZEUn6r",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tG7Mtb",
+          "name": "Beef Stew",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tG7Mtb",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-5kyaoG",
+          "name": "Cheese",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-5kyaoG",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-2YVKCU",
+          "name": "Spinach Omelet",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-2YVKCU",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-z57hNM",
+          "name": "Beef Hash",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-z57hNM",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-7FNaQi",
+          "name": "Pork Chop",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-7FNaQi",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-EJyQaE",
+          "name": "Kale Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-EJyQaE",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-n5byZt",
+          "name": "Fresh Fruit",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-n5byZt",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-8yJnGe",
+          "name": "Cranberry Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-8yJnGe",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tr5K86",
+          "name": "Fudge Ice Cream Cake",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tr5K86",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+    ],
+    "type": "@@MapBox/SET_DELIVER_GEO_FEATURES",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Array [
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-ZEUn6r",
+          "name": "Chunky Monkey",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-ZEUn6r",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tG7Mtb",
+          "name": "Beef Stew",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tG7Mtb",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-5kyaoG",
+          "name": "Cheese",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-5kyaoG",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-2YVKCU",
+          "name": "Spinach Omelet",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-2YVKCU",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-z57hNM",
+          "name": "Beef Hash",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-z57hNM",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-7FNaQi",
+          "name": "Pork Chop",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-7FNaQi",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-EJyQaE",
+          "name": "Kale Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-EJyQaE",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-n5byZt",
+          "name": "Fresh Fruit",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-n5byZt",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-8yJnGe",
+          "name": "Cranberry Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-8yJnGe",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tr5K86",
+          "name": "Fudge Ice Cream Cake",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tr5K86",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+    ],
+    "type": "@@MapBox/SET_DELIVER_GEO_FEATURES",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Array [
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-ZEUn6r",
+          "name": "Chunky Monkey",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-ZEUn6r",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tG7Mtb",
+          "name": "Beef Stew",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tG7Mtb",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-5kyaoG",
+          "name": "Cheese",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-5kyaoG",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-2YVKCU",
+          "name": "Spinach Omelet",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-2YVKCU",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-z57hNM",
+          "name": "Beef Hash",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-z57hNM",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-7FNaQi",
+          "name": "Pork Chop",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-7FNaQi",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-EJyQaE",
+          "name": "Kale Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-EJyQaE",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-n5byZt",
+          "name": "Fresh Fruit",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-n5byZt",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-8yJnGe",
+          "name": "Cranberry Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-8yJnGe",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tr5K86",
+          "name": "Fudge Ice Cream Cake",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tr5K86",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+    ],
+    "type": "@@MapBox/SET_DELIVER_GEO_FEATURES",
+  },
+]
+`;
+
+exports[`MapBox Actions should dispatch delivered if reached 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "@@MapBox/SET_DELIVER_SIMULATION_STARTED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "400 World Way, Los Angeles, CA 90045",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "ZEUn6r",
+      "name": "Chunky Monkey",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "2208 Sawtelle Blvd, Los Angeles, CA 90064",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "tG7Mtb",
+      "name": "Beef Stew",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "1303 Westwood Blvd, Los Angeles, CA 90024",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "5kyaoG",
+      "name": "Cheese",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "1522 Abbott Kinney Blvd, Los Angeles, CA 90291",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "2YVKCU",
+      "name": "Spinach Omelet",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "10117 Washington Blvd, Culver City, CA 90232",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "z57hNM",
+      "name": "Beef Hash",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "1716 S Sepulveda Blvd, Los Angeles, CA 90025",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "7FNaQi",
+      "name": "Pork Chop",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "9409 Venice Blvd, Culver City, CA 90232",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "EJyQaE",
+      "name": "Kale Salad",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "13455 Maxella Ave, Ste 250, Marina Del Rey, CA 90292",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "n5byZt",
+      "name": "Fresh Fruit",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "101 Santa Monica Blvd, Santa Monica, CA 90401",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "8yJnGe",
+      "name": "Cranberry Salad",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "coordinates": Array [
+        -130,
+        37,
+      ],
+      "destination": "1321 3rd St Promenade, Santa Monica, CA 90401",
+      "distance": 1,
+      "endTime": 2019-04-20T05:09:15.265Z,
+      "id": "tr5K86",
+      "name": "Fudge Ice Cream Cake",
+      "route": Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {},
+        "type": "Feature",
+      },
+      "speed": 0.0075,
+      "startTime": 2019-04-20T05:01:15.265Z,
+    },
+    "type": "@@OrderList/ORDER_DELIVERED",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Array [
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-ZEUn6r",
+          "name": "Chunky Monkey",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-ZEUn6r",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tG7Mtb",
+          "name": "Beef Stew",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tG7Mtb",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-5kyaoG",
+          "name": "Cheese",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-5kyaoG",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-2YVKCU",
+          "name": "Spinach Omelet",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-2YVKCU",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-z57hNM",
+          "name": "Beef Hash",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-z57hNM",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-7FNaQi",
+          "name": "Pork Chop",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-7FNaQi",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-EJyQaE",
+          "name": "Kale Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-EJyQaE",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-n5byZt",
+          "name": "Fresh Fruit",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-n5byZt",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-8yJnGe",
+          "name": "Cranberry Salad",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-8yJnGe",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            -118.47105,
+            34.00321,
+          ],
+          "type": "Point",
+        },
+        "properties": Object {
+          "id": "current-point-tr5K86",
+          "name": "Fudge Ice Cream Cake",
+        },
+        "type": "Feature",
+      },
+      Object {
+        "geometry": Object {
+          "coordinates": Array [
+            Array [
+              -118.46742,
+              34.00534,
+            ],
+            Array [
+              -118.47105,
+              34.00321,
+            ],
+          ],
+          "type": "LineString",
+        },
+        "properties": Object {
+          "id": "current-route-tr5K86",
+          "route": "current",
+        },
+        "type": "Feature",
+      },
+    ],
+    "type": "@@MapBox/SET_DELIVER_GEO_FEATURES",
+  },
+]
+`;

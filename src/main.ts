@@ -27,7 +27,7 @@ function delayedHello(
 // Here it is suppressing missing type definitions for greeter function
 
 // tslint:disable-next-line typedef
-export async function greeter(name) {
+export async function greeter(name: string) {
   // tslint:disable-next-line no-unsafe-any no-return-await
   return await delayedHello(name, Delays.Long);
 }

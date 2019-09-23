@@ -11,8 +11,8 @@ export function AppFooter() {
       Made with&nbsp;
       <Heart fontSize={5} color="rgb(255, 85, 85)" />
       &nbsp;by&nbsp;
-      <A target="_blank" href="https://github.com/inkless" color="white">
-        @Guangda Zhang
+      <A target="_blank" href="#" color="white">
+        @testerhub
       </A>
       &nbsp;|&nbsp;
       <AboutLink />

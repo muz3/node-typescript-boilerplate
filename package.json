@@ -1,5 +1,5 @@
 {
-  "name": "react-starter-kit",
+  "name": "typescript-react-starter-kit",
   "version": "0.1.0",
   "description": "React Starter Kit",
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "tslint -p tsconfig.json -c tslint.json 'src/**/*.{ts,tsx}'",
     "precommit": "lint-staged",
     "storybook": "start-storybook -p 6006",
-    "test": "jest",
+    "test": "jest --updateSnapshot",
     "test:debug": "node --inspect node_modules/.bin/jest --watch --runInBand",
     "test:watch": "npm test -- --watch",
     "pretest:e2e": "npm run build",

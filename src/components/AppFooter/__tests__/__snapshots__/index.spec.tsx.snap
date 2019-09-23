@@ -17,10 +17,10 @@ exports[`Component AppFooter should render AppFooter correctly 1`] = `
    by 
   <styled.a
     color="white"
-    href="https://github.com/inkless"
+    href="#"
     target="_blank"
   >
-    @Guangda Zhang
+    @testerhub
   </styled.a>
    | 
   <Styled(AboutLink) />
